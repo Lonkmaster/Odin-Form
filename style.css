@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    max-height: 100%;
+}
+
+
+
+.flexContainer {
+    height: 100%;
+    
+    display: flex;
+    
+}
