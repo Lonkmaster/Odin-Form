@@ -1,17 +1,155 @@
+:root {
+    --left-space: 48px;
+    --bottom-space: 25px;
+    --font-size: 1.5rem;
+
+}
+
+.inputs input:invalid {
+    border-color: red;
+}
+#email input:valid {
+    border-color: green;
+}
+
+.inputs input:focus {
+   outline: 1px solid blue;
+}
+
 body {
     margin: 0px;
     padding: 0px;
 }
 
-img {
-    max-height: 100%;
+form button {
+    height: 40px;
+    background-color: #596D48;
+    color: white;
+    width: 200px;
+    margin: 35px 0 15px 48px;
+    box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.1);
+    border: 1px solid;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 
+.logIn {
+    padding-left: var(--left-space);
+    
+}
 
-.flexContainer {
-    height: 100%;
+.footerImg {
+    color: white;
+    text-align: center;
+}
+.logIn a {
+    color: #596D48;
+    font: bold;
+    text-decoration: none;
+}
+
+
+.inputs label {
+    font-size: .9rem;
     
+}
+
+.inputs div {
+    height: 30%;
     display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.inputs {
+    display: flex;
+    row-gap: 15px;
+    column-gap: 50px;
+}
+
+.inputSection input {
+    height: 35px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 4px 8px;
+}
+
+.banner img {
+    height: 100px;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    background-color: rgb(0, 0, 0, 0.5);
+    margin-top: 15vh;
+    padding: 16px;
+}
+
+.leafImage {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    width: 30vw;
+    background-position: center center;
+    background-image: url("./images/photo-1585202900225-6d3ac20a6962.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.mainFlexContainer {
+    display: flex;
+    flex-grow: 1;
+
     
+}
+
+.inputSection div h3 {
+    font-size: var(--font-size);
+    
+}
+
+.header {
+    width: 60vw;
+    font-weight: 700;
+    padding-left: var(--left-space);
+    font-size: var(--font-size);
+}
+
+.textSection {
+    display: flex;
+    flex-grow: 1;
+    background-color: #f9fafb;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 10%;
+
+
+}
+
+.inputSection {
+    display: flex;
+    color: black;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px 5px rgb(0, 0, 0, 0.1);
+    padding-left: var(--left-space);
+    padding-bottom: var(--bottom-space);
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
 }

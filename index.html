@@ -7,12 +7,62 @@
         <title>Document</title>
     </head>
     <body>
-        <div class="flexContainer">
-            <div>
-                <img class="stretch"src="../Odin form/images/photo-1585202900225-6d3ac20a6962.jpg" width="600" height="100%">
+        <div class="mainFlexContainer">
+            <div class="leafImage">
+                <div class="banner">
+                    <img src="../Odin form/images/odin-lined.png" alt="Odin Logo">
+                    ODIN
+                </div>
+                <div class="footerImg"> Nigga adssadasdasdasdadas</div>
             </div>
-            
-            <p> Fulfill your dreams of seeing the most racist people on the earth</p>
+            <div class="textSection">      
+                <div class="header"> 
+                    <p> This is not a real online service! you know you need something like this in your life
+                        to help you realize your deepest dreams. 
+                    </p>
+                    <p>
+                        You know you want to.
+                    </p>
+                </div>
+                <form id="form">
+                    <div class="inputSection"> 
+                        <div style="flex-grow: 1;">
+                            <h3> Nigga, it's time to go</h3>
+                            <div class="inputs">
+                                <div>
+                                    <label for="firstName"> FIRST NAME </label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Bob">
+                                </div>
+                                <div>
+                                    <label for="lastName"> LAST NAME </label>  
+                                    <input type="text" id="lastName" name="lastName" placeholder="Segual">
+                                </div>
+                                <div>
+                                    <label for="email"> EMAIL ADDRESS </label>
+                                    <input type="email" id="email" name="email" placeholder="Bobsegual123@email.com" >
+                                </div>
+                                <div>
+                                    <label for="phoneNumber"> PHONE NUMBER </label>
+                                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                </div>
+                                <div>
+                                    <label for="password"> PASSWORD </label>
+                                    <input type="password" id="password" name="password" minlength="5" maxlength="32">
+                                </div>
+                                <div>
+                                    <label for="confirmPassword"> CONFIRM PASSWORD </label>
+                                    <input type="text" id="confirmPassword" name="confirmPasswords"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="createAccount" type="submit"> Create Account</button>
+                </form>
+                <p class="logIn"> 
+                    Already have an account?
+                    <a href="#">Log In</a>
+                </p>
+            </div>
         </div>
         
         <script src="javascript.js"> </script>
